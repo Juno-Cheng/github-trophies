@@ -185,7 +185,7 @@ export class LongTimeAccountTrophy extends Trophy{
     super(score, rankConditions);
     this.title = "Age";
     this.filterTitles = ["LongTimeUser"];
-    this.bottomMessage = score + ((score>0) ? "years" : "year");
+    this.bottomMessage = score + ((score>0) ? " years" : " year");
     this.hidden = false;
   }
 }
