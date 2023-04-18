@@ -14,7 +14,7 @@ let wantAchieveSuperRank = false;
 let wantMultipleLang = true;
 let wantLongTimeAccount = true;
 let wantAncientAccount = false;
-let wantNewAccount = false;
+let wantNewAccount = true;
 let wantMultipleOrganizations = true;
 
 export class Trophy {
@@ -151,7 +151,7 @@ export class NewAccountTrophy extends Trophy{
       ),
     ];
     super(score, rankConditions);
-    this.title = "NewUser";
+    this.title = "Newbie";
     this.filterTitles = ["NewUser"];
     this.bottomMessage = "After 2020";
     this.hidden = false;
@@ -178,12 +178,12 @@ export class LongTimeAccountTrophy extends Trophy{
     const rankConditions = [
       new RankCondition(
         RANK.SECRET,
-        "Village Elder",
+        "Adventure Begins!",
         (wantLongTimeAccount) ? 0 : 3,
       ),
     ];
     super(score, rankConditions);
-    this.title = "LongTimeUser";
+    this.title = "Age";
     this.filterTitles = ["LongTimeUser"];
     this.bottomMessage = score + ((score>0) ? "years" : "year");
     this.hidden = false;
