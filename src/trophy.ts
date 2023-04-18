@@ -151,7 +151,7 @@ export class NewAccountTrophy extends Trophy{
       ),
     ];
     super(score, rankConditions);
-    this.title = "NewUser";
+    this.title = "New User";
     this.filterTitles = ["NewUser"];
     this.bottomMessage = "After 2020";
     this.hidden = false;
